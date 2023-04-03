@@ -10,7 +10,10 @@
     background-position: center;
     background-size: cover;
     position: relative; */
-    background-color: black;          
+    background-color: black;  
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     }
 
 nav{
@@ -241,5 +244,26 @@ h3{
     font-size: 42px;
     color: #fff;
 }
+.icons{
+    margin: 20px;
+}
+.icons ul li{
+    display: inline-block;
+    position: relative;
+    padding: 5px 10px;
+}
+.icons ul li::after{
+    content: '';
+    width:10%;
+    height: 4px;
+    background: #f87cf4;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+.icons ul li:hover::after{
+    width:100%;
+}
+
 
 
